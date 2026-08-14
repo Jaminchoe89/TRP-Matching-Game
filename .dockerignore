@@ -1,0 +1,8 @@
+.git
+.gitignore
+.claude
+supabase
+Dockerfile
+.dockerignore
+*.ai
+assets/cards/1x
