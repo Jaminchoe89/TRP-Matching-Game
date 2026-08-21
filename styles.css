@@ -92,9 +92,9 @@ body::after {
   --stage-pad: 28px;
   --hud-height: 92px;
   --board-gap: 14px;
-  --board-height-fit: calc((100dvh - (var(--stage-pad) * 2) - var(--hud-height) - 22px - var(--board-gap)) / 2);
-  --board-width-fit: calc(((100vw - (var(--stage-pad) * 2)) - (var(--board-gap) * 5)) * 7 / 30);
-  --card-height: min(var(--board-height-fit), var(--board-width-fit), 42dvh);
+  --board-height-fit: calc((100dvh - (var(--stage-pad) * 2) - var(--hud-height) - 22px - (var(--board-gap) * 2)) / 3);
+  --board-width-fit: calc(((100vw - (var(--stage-pad) * 2)) - (var(--board-gap) * 3)) * 7 / 20);
+  --card-height: min(var(--board-height-fit), var(--board-width-fit), 31dvh);
   --card-width: calc(var(--card-height) * 5 / 7);
   padding: 28px;
   background:
@@ -246,7 +246,7 @@ body::after {
 }
 
 .playfield {
-  width: calc((var(--card-width) * 6) + (var(--board-gap) * 5));
+  width: calc((var(--card-width) * 4) + (var(--board-gap) * 3));
   max-width: 100%;
   display: grid;
   gap: 22px;
@@ -256,7 +256,7 @@ body::after {
 .hud h2 {
   margin: 0;
   flex: 0 1 auto;
-  min-width: calc((var(--card-width) * 4) + (var(--board-gap) * 3));
+  min-width: calc((var(--card-width) * 3) + (var(--board-gap) * 2));
   max-width: calc(100% - 140px);
   font-size: clamp(1.55rem, 2.8vw, 3.25rem);
   font-weight: 600;
@@ -311,8 +311,8 @@ body::after {
 
 .game-board {
   display: grid;
-  grid-template-columns: repeat(6, var(--card-width));
-  grid-template-rows: repeat(2, var(--card-height));
+  grid-template-columns: repeat(4, var(--card-width));
+  grid-template-rows: repeat(3, var(--card-height));
   gap: var(--board-gap);
   width: max-content;
   max-width: 100%;
@@ -414,7 +414,7 @@ body::after {
     --stage-pad: 18px;
     --hud-height: 74px;
     --board-gap: 10px;
-    --card-height: min(var(--board-height-fit), var(--board-width-fit), 36dvh);
+    --card-height: min(var(--board-height-fit), var(--board-width-fit), 24dvh);
     width: 100%;
     height: 100dvh;
     aspect-ratio: auto;
@@ -430,7 +430,7 @@ body::after {
   }
 
   .hud h2 {
-    min-width: calc((var(--card-width) * 4.2) + (var(--board-gap) * 3.2));
+    min-width: calc((var(--card-width) * 3.2) + (var(--board-gap) * 2.2));
     max-width: calc(100% - 96px);
     font-size: clamp(2rem, 4.6vw, 3.4rem);
     line-height: 0.98;
@@ -452,7 +452,7 @@ body::after {
   }
 
   .hud h2 {
-    min-width: calc((var(--card-width) * 4.1) + (var(--board-gap) * 3));
+    min-width: calc((var(--card-width) * 3.1) + (var(--board-gap) * 2));
     max-width: calc(100% - 88px);
     font-size: clamp(1.9rem, 5.2vw, 2.6rem);
   }
