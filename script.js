@@ -1,15 +1,15 @@
 const TURN_LENGTH = 20;
 const CARD_COUNT = 12;
 const TARGET_MATCHED_PAIRS = 3;
-const CARD_BACK_IMAGE = "./assets/cards/Back.png?v=20260827a";
+const CARD_BACK_IMAGE = "./assets/cards/Back.png?v=20260827b";
 const SOUND_VOLUME_MULTIPLIER = 12;
 const CARD_FACE_IMAGES = [
-  "./assets/cards/Front 1.png?v=20260827a",
-  "./assets/cards/Front 2.png?v=20260827a",
-  "./assets/cards/Front 3.png?v=20260827a",
-  "./assets/cards/Front 4.png?v=20260827a",
-  "./assets/cards/Front 5.png?v=20260827a",
-  "./assets/cards/Front 5.png?v=20260827a",
+  "./assets/cards/Front 1.png?v=20260827b",
+  "./assets/cards/Front 2.png?v=20260827b",
+  "./assets/cards/Front 3.png?v=20260827b",
+  "./assets/cards/Front 4.png?v=20260827b",
+  "./assets/cards/Front 5.png?v=20260827b",
+  "./assets/cards/Front 5.png?v=20260827b",
 ];
 
 const state = {
